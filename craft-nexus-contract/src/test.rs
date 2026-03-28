@@ -2019,6 +2019,8 @@ fn test_multiple_tokens_on_whitelist() {
     client.create_escrow(&buyer, &seller, &token2.address(), &10_000, &2, &Some(3600));
     assert_eq!(client.get_escrow(&1).status, EscrowStatus::Active);
     assert_eq!(client.get_escrow(&2).status, EscrowStatus::Active);
+}
+
 // ============================================================
 // Issue #111 – Batch Optimization Tests (Additional)
 // ============================================================
